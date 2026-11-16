@@ -71,6 +71,11 @@ After an add, update, or delete, refresh the `students` table in pgAdmin (*right
 
 Note: JavaScript doesn't need a compile step, so "compiling" here is just `npm install`.
 
+
+## Video Demonstration
+
+[Watch the demo video](https://youtu.be/mqZFIrMCtLc)
+
 ## Resetting the Data
 
 Re-run `database/schema.sql`. It drops and recreates the table with the original 3 students.

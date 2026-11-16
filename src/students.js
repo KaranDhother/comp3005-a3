@@ -23,6 +23,12 @@ async function getAllStudents() {
 
 // CREATE: insert a new student and print the new row 
 async function addStudent(first_name, last_name, email, enrollment_date) {
+  // Reject blank required fields 
+  if (!first_name?.trim() || !last_name?.trim() || !email?.trim()) {
+    throw new Error('First name, last name, and email are required.');
+  }
+
+
   const result = await pool.query(
     `INSERT INTO students (first_name, last_name, email, enrollment_date)
      VALUES ($1, $2, $3, $4)
@@ -39,6 +45,12 @@ async function addStudent(first_name, last_name, email, enrollment_date) {
 
 // UPDATE: change the email of the student with the given id
 async function updateStudentEmail(student_id, new_email) {
+  // Reject a blank new email
+  if (!new_email?.trim()) {
+    throw new Error('New email cannot be empty.');
+  }
+
+  
   const result = await pool.query(
     'UPDATE students SET email = $1 WHERE student_id = $2',
     [new_email, student_id]

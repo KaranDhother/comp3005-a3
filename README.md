@@ -4,7 +4,7 @@ A command-line app that connects to PostgreSQL and runs CRUD operations on a `st
 
 ## Video Demonstration
 
-[Watch the demo video](PASTE_VIDEO_LINK_HERE)
+[Watch the demo video](https://youtu.be/mqZFIrMCtLc)
 
 ## Project Structure
 
@@ -16,7 +16,7 @@ A command-line app that connects to PostgreSQL and runs CRUD operations on a `st
 │   ├── app.js          # Interactive menu that calls each function
 │   ├── db.js           # PostgreSQL connection pool (reads settings from .env)
 │   └── students.js     # getAllStudents, addStudent, updateStudentEmail, deleteStudent
-├── .env.example        # Template for your database connection settings
+├── .env.example        # Template for database connection settings
 ├── package.json
 └── README.md
 ```

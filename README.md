@@ -2,9 +2,6 @@
 
 A command-line app that connects to PostgreSQL and runs CRUD operations on a `students` table.
 
-## Video Demonstration
-
-[Watch the demo video](https://youtu.be/mqZFIrMCtLc)
 
 ## Project Structure
 
